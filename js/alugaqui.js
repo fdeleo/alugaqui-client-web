@@ -6,11 +6,13 @@ $( "#myId" );
 
 function formJSON() {
   // Test with 1 input only
-  //var jsonString;
-  var input1 = $("input").eq(0).val();
-  var input2 = $("input").eq(1).val();
-  var input3 = $("input").eq(2).val();
-  // Testing to validate response
-  console.log(input1 , input2 , input3);
-};
 
+  var inputKey1 = $("input").eq(0).attr('id');
+  var inputValue1 = $("input").eq(0).val();
+  
+  var jsonString = '{' + inputKey1 + ':' + inputValue1 + '}' ;
+  // Testing to validate response
+  
+  console.log (jsonString);
+
+};
