@@ -20,5 +20,5 @@ function formJSON() {
     
   // Testing to validate response
   console.log (jsonString);
-  return
+  return jsonString;
 };
