@@ -31,20 +31,20 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2 class="section-heading text-center">Cadastro Imobiliária</h2>
                     <!-- Beginning of SignUp Form -->
-                    <form>
+                    <form id="cadastroImobiliaria" method="post" onsubmit="formJSON();">
                     <div class="form-group">
                       <label for="NomeImobiliaria">Nome</label>
-                      <input type="text" class="form-control" id="NomeImobiliaria" placeholder="Imobiliaria do Zé">
+                      <input type="text" class="form-control" id="nomeImobiliaria" placeholder="Imobiliaria do Zé">
                     </div>
                     <div class="form-group">
                       <label for="CnpjInput">CNPJ</label>
-                      <input type="text" class="form-control" id="CnpjInput" placeholder="XX.XXX.XXX/YYYY-ZZ">
+                      <input type="text" class="form-control" id="cnpjInput" placeholder="XX.XXX.XXX/YYYY-ZZ">
                     </div>                  
                     <div class="form-group">
                       <label for="InputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="InputPassword1" placeholder="******">
+                      <input type="password" class="form-control" id="inputPassword1" placeholder="******">
                     </div>                                        
-                    <button type="submit" class="btn btn-default">Enviar</button>
+                    <button id="enviar" type="submit" class="btn btn-default">Enviar</button>
                     </form> 
                   <br>
                 </div>
@@ -57,6 +57,8 @@
   
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.js"></script>
+  <!-- Alugaqui JS -->
+  <script src="js/alugaqui.js"></script>
   
 </body>
   
