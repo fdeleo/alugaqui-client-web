@@ -8,8 +8,24 @@ Alugaqui JavaScript File
 /* Search function */
 
 function buscaImovel() {  
-  
-  console.log("Busca chamada com sucesso!")
+  var bairros = [
+    "barra", 
+    "recreio", 
+    "ilha", 
+    "ipanema", 
+    "leblon", 
+    "botafogo", 
+    "lagoa" 
+  ];
+  var bairrosTamanho = bairros.length;      
+  var input = document.getElementById("buscaBairro");
+  var inputValue = input.value;
+  console.log("Valor de busca:" + inputValue);
+  console.log("Valores de bairros:");
+  var i;  
+  for (i = 0; i < bairrosTamanho; i++) {
+    console.log(bairros[i]);
+  }
 }
 
 /* Formats FORM data as a JSON string */
@@ -46,3 +62,4 @@ function sendFormData(){
 function validateFormData(){
   
 }
+  
