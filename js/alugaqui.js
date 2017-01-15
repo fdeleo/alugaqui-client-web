@@ -26,6 +26,23 @@ function buscaImovel() {
   for (i = 0; i < bairrosTamanho; i++) {
     console.log(bairros[i]);
   }
+  /* Validation of the search */
+  var resultadoBusca = false;
+    
+  for (i = 0; i < bairrosTamanho; i++) {
+    if ( inputValue == bairros[i]){
+      resultadoBusca = true;
+    }
+  }
+  console.log("O resultado da busca:")
+  
+  if ( resultadoBusca == true ){
+    console.log("FOI ENCONTRADO! =)")
+  }
+  else{
+    console.log("NÃO FOI ENCONTRADO! =(")
+  } 
+    
 }
 
 /* Formats FORM data as a JSON string */
