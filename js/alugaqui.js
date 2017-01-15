@@ -20,6 +20,9 @@ function buscaImovel() {
   var bairrosTamanho = bairros.length;      
   var input = document.getElementById("buscaBairro");
   var inputValue = input.value;
+  
+  criariImoveis();
+  
   console.log("Valor de busca:" + inputValue);
   console.log("Valores de bairros:");
   var i;  
@@ -37,13 +40,30 @@ function buscaImovel() {
   console.log("O resultado da busca:")
   
   if ( resultadoBusca == true ){
-    console.log("FOI ENCONTRADO! =)")
+    console.log("FOI ENCONTRADO! =)");
   }
   else{
-    console.log("NÃO FOI ENCONTRADO! =(")
+    console.log("NÃO FOI ENCONTRADO! =(");
   } 
     
-}
+};
+
+/* Function to create Dummy ImoveisObjects */
+
+function criariImoveis() {
+  
+  var imovel = {
+    endereco : "Rua de Teste para Validacao",
+    cep : "22631450" ,
+    bairro: "barra"    
+  };  
+  
+  console.log("Imovel criado!");
+  console.log("Endereço: " + imovel.endereco);
+  console.log("CEP: " + imovel.cep);
+  console.log("Bairro: " + imovel.bairro);
+};
+
 
 /* Formats FORM data as a JSON string */
 function formJSON() {
@@ -73,10 +93,10 @@ function sendFormData(){
   var data = formJSON();
   //Sends data to the server
     
-}
+};
 
 /* Validates FORM data */
 function validateFormData(){
   
-}
+};
   
