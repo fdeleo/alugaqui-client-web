@@ -2,7 +2,15 @@
 Alugaqui JavaScript File
 */
 
+
 /* 1 - FORM FUNCTIONS */
+
+/* Search function */
+
+function buscaImovel() {  
+  
+  console.log("Busca chamada com sucesso!")
+}
 
 /* Formats FORM data as a JSON string */
 function formJSON() {
