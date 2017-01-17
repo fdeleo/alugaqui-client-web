@@ -93,7 +93,7 @@ function sendFormData(data){
   //Sends data to the server
   var httpReq = new XMLHttpRequest();
     
-  httpReq.open("GET", "alugaquiBusca.js?bairro=" + data , true);
+  httpReq.open("GET", "/bairro/" + data , true);
   
   httpReq.send();
   
