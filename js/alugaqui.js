@@ -45,7 +45,8 @@ function buscaImovel() {
   else{
     console.log("NÃO FOI ENCONTRADO! =(");
   } 
-    
+   
+  sendFormData(inputValue);  
 };
 
 /* Function to create Dummy ImoveisObjects */
@@ -88,11 +89,14 @@ function formJSON() {
 };
 
 /* Send JSON formatted data to Server */
-function sendFormData(){
-  // Gets JSON formatted data
-  var data = formJSON();
+function sendFormData(data){
   //Sends data to the server
+  var httpReq = new XMLHttpRequest();
     
+  httpReq.open("GET", "alugaquiBusca.js?bairro=" + data , true);
+  
+  httpReq.send();
+  
 };
 
 /* Validates FORM data */
