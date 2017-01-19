@@ -92,15 +92,14 @@ function formJSON() {
 function sendFormData(data){
   //Sends data to the server
   var httpReq = new XMLHttpRequest();
-    
-  httpReq.open("GET", "/bairro/" + data , true);
-  
-  httpReq.send();
-  
-};
 
-/* Validates FORM data */
-function validateFormData(){
-  
+  httpReq.open("GET", "/bairro/" + data , true);
+  httpReq.send(null);
+  /* Renders the page with the HTTP Response from Server */
+  httpReq.onreadystatechange = function () {
+        if(httpReq.readyState === XMLHttpRequest.DONE && httpReq.status === 200) {
+            document.write(httpReq.responseText);
+        }
+    };
 };
   
