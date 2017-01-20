@@ -1,4 +1,4 @@
 # alugaqui-client-web
-**AlugAqui web client** 
+**AlugAqui web client**
 
-To preview the webpage, click [here](http://alugaqui-client-web.s3-website-us-west-2.amazonaws.com/) 
+To preview the webpage, click [here](http://35.165.16.158:3000/) 
