@@ -13,6 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Alugaqui Core CSS -->
+    <link href="css/alugaqui.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -72,12 +74,18 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">AlugAqui</h1>
-                <hr>                              
-                    <div class="form-group">    
-                      <input type="search" class="form-control" id="buscaBairro" placeholder="Bairro" onsearch="buscaImovel();">
-                    </div>      
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Mais Detalhes</a>
+                      <div class="wrap">
+                        <div class="search">
+                      <input type="search" class="searchTerm" id="buscaBairro" placeholder="Bairro" onsearch="buscaImovel();">
+                      <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                </div>
             </div>
+
+              <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Mais Detalhes</a> -->
+
         </div>
     </header>
 
@@ -271,7 +279,7 @@
     <script src="js/bootstrap.js"></script>
     <!-- Alugaqui JS -->
     <script src="js/alugaqui.js"></script>
-  
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
